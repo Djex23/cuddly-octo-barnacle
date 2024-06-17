@@ -16,4 +16,18 @@ mi_objeto = MiClase(1, 12)
 mi_lista = mi_objeto.generar_lista()
 suma = mi_objeto.sumar_lista(mi_lista)
 
+
+
+
+    def generar_lista(self):
+        return [i for i in range(self.inicio, self.fin+1)]
+
+    def sumar_lista(self, lista):
+        return reduce(add, lista)
+
+mi_objeto = MiClase(1, 12)
+mi_lista = mi_objeto.generar_lista()
+suma = mi_objeto.sumar_lista(mi_lista)
+
+print(suma)
 print(suma)
